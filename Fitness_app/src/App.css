@@ -1,0 +1,179 @@
+
+.pages{
+    background-color: rgb(96, 96, 254);
+    display: flex;
+    justify-content: space-evenly;
+}
+.front{
+    text-align: left;
+    padding: 75px;
+    width: 50%;
+}
+.front>h1{
+    color: white;
+    margin:0px;
+    padding-left: 10px;
+    text-align: left;
+}
+.front>p{
+    font-size: 20px;
+    text-align: left;
+    color:white;
+}
+.pages>img{
+    width:auto;
+    height: 500px;
+    display:block;
+    margin: auto;
+    padding-right:5px;
+}
+.fbpass{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 5px;
+}
+.fbpass>div>div{
+    padding: 0px 50px;
+}
+.fbpass>div>img{
+    height: 250px;
+    width: 95%;
+    display: block;
+    margin: 0px auto 0px;
+}
+.fbpass>div>div>h1{
+    margin: 20px auto;
+    text-align: center;
+}
+.fbpass>div>div>p{text-align: center;}
+.fbpass>div>div>div{
+    margin-left:40%;
+}
+.fbplus{background-color: rgb(252, 219, 252);}
+.videos{background-color: rgb(238, 237, 237);}
+.program{background-color: rgb(247, 247, 247);}
+.fbmerch{background-color: rgb(222, 254, 254);}
+.article{background-color: black; color:white;}
+.recipe{background-color: rgb(220, 220, 220);}
+
+.programs{
+    padding: 5px;
+    width:95%;
+}
+.programs>div{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.programs>div>div{
+    margin: 5px;
+}
+.programs>div>div>img{
+    height: 150px;
+    width: 250px;
+}
+.bottom{
+    background-color: rgb(30, 26, 26);
+    color: white; 
+}
+.cont{
+    display: flex;
+    width:95%;
+    margin:auto;
+    justify-content: space-between;
+}
+.cont>.descr{
+    display: flex;
+    padding: 0px 10px;
+}
+.descr>div{
+    margin:5px
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+}
+.social{
+    display: flex;
+    padding: 10px;
+}
+.social>a>img{
+    width: 20px;
+    height: 20px;
+    margin: 0px 5px;
+    border-radius: 5px;
+}
+.policy{
+    display: flex;
+}
+.policy>a{
+    margin: 10px;
+}
+.imglogo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+/* Small Screen*/
+@media all and (min-width:320px) and (max-width:700px){
+    .pages{
+        display: grid;
+        justify-content: center;
+        padding: 10px;
+    }
+    .pages>img{padding:5px;}
+    .front{
+        width: auto;
+        text-align: center;
+        padding: 10px 0px;
+    }
+    .front>h1, .front>p{
+        text-align: center;
+    }
+    .fbpass{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 5px 0px;
+    }
+    .fbpass>div{margin: 5px 0px;
+    height: 400px;
+    }
+    .programs>div{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .programs>div>div>img{
+        height: 350px;
+        width: 450px;
+    }
+    .cont{
+        display: grid;
+        width:95%;
+        margin:auto;
+        justify-content: space-between;
+    }
+    .cont>.descr{
+        display: grid;
+        padding: 0px 10px;
+    }
+    .descr>div{
+        margin:5px
+    }
+    .contact{
+        display: grid;
+        justify-content: space-between;
+    }
+    .policy{
+        display: grid;
+        padding: 10px;
+    }
+    /* Medium Screen */
+    @media all and (min-width:520px) and (max-width:720px){
+        .programs>div{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .programs>div>div>img{
+            height: 200px;
+            width: 300px;
+        }
+    }
+}
